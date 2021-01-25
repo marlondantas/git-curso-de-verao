@@ -1,0 +1,55 @@
+Ver a versão do Git: git --version
+
+#Dentro do diretório que deseja trabalhar, faça o clone do repositório da aula com o seguinte comando:
+git clone https://github.com/marlondantas/git-curso-de-verao.git
+
+#Crie um arquivo qualquer dentro da pasta e dê o seguinte comando:
+git status
+#Aparece em vermelho o que não está add ao repositório local
+
+#Adicione o arquivo ao repositório local com:
+git add nomedoarquivo
+#lembre de usar a extensao, ex: .txt,.py, .html, etc
+
+#Repita o comando:
+git status
+#Aparece em verde os novos arquivos a serem commitados
+
+#Faça o commit (envio desse arquivo):
+git commit -m "Sua mensagem referente ao arquivo"
+#Todos os arquivos prontos para commit serão commitados
+
+#Use o seguinte comando para ver um histórico de trabaho:
+git log
+
+#Crie uma nova branch, um espaço para trabalhar em paralelo
+git branch tela
+#poderia ser qualquer outro nome
+
+#Use o comando para ver suas branchs:
+git branch
+#Está em verde a que você está atualmente
+
+#Selecione a branch que você trabalha
+#git checkout nomedabranch
+
+#Crie novo arquivo e execute:
+git status
+
+#Adicione esse arquivo com:
+git add nomedoarquivo
+#Esse comando já foi usado acima :-)
+
+#Faça um commit dele, também já foi feito acima, apenas repita o comando e altere a mensagem
+
+#Crie outra branch chamada banco
+#liste as branchs
+#Seleione a branch banco
+#Crie um novo arquivo e adicione-o
+#Faça um commit
+#Selecione a branch master para juntar o trabalho das branchs Tela e Banco
+#Execute o comando:
+git merge tela
+#e também
+#git merge banco
+#Agora já está tudo junto :-)
